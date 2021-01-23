@@ -1,0 +1,13 @@
+BaseEntity:
+  properties:
+    id:
+      type: integer
+      minimum: 1
+    created:
+      type: string
+      format: date-time
+    updated:
+      type: string
+      format: date-time
+    uuid:
+      type: string

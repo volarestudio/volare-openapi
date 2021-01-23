@@ -1,0 +1,19 @@
+Person:
+  properties:
+    tax_code:
+      $ref: 'tax_code.yaml#/TaxCode'
+    given_name:
+      type: string
+      maxLength: 255
+    family_name:
+      type: string
+      maxLength: 255
+    date_of_birth:
+      type: string
+      format: date
+    birth_place:
+      $ref: 'location.yaml#/Location'
+    residence:
+      $ref: 'location.yaml#/Location'
+  externalDocs:
+    url: https://w3id.org/italia/onto/CPV

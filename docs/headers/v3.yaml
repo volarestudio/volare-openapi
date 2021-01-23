@@ -1,0 +1,58 @@
+# Throttling headers.
+X-RateLimit-Limit:
+  description: The number of allowed requests in the current period
+  schema:
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 1000000
+X-RateLimit-Remaining:
+  description: The number of remaining requests in the current period
+  schema:
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 1000000
+X-RateLimit-Reset:
+  description: The number of seconds left in the current period
+  schema:
+    type: integer
+    format: int32
+    minimum: 0
+    maximum: 186400
+Retry-After:
+    description: |-
+      Retry contacting the endpoint *at least* after seconds.
+      See https://tools.ietf.org/html/rfc7231#section-7.1.3
+    schema:
+      type: integer
+      format: int32
+      minimum: 0
+      maximum: 186400
+Location:
+  description: |-
+    In some responses, this header references the
+    primary resource created.
+
+    It is used for redirections too.
+
+    See https://tools.ietf.org/html/rfc7231#section-7.1.2
+  schema:
+    type: string
+    format: url
+    maxLength: 4096
+
+Sunset:
+  description: 
+     The Sunset HTTP response header field,
+     indicates that a URI is likely to become unresponsive at a
+     specified point in the future.  It also defines a sunset link
+     relation type that allows linking to resources providing information
+     about an upcoming resource or service sunset.
+  schema:
+    type: string
+    format: HTTP-date
+    example: Sun, 06 Nov 1994 08:49:37 GMT
+    maxLength: 30
+    externalDocs:
+      url: https://tools.ietf.org/html/rfc7231#appendix-D
