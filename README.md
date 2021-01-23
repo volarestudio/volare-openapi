@@ -26,12 +26,4 @@ docs/
     └── problem.yaml
 ```
 
-## Building the specs
-
-Every commit is tested via the `tox` python framework.
-
-master and tags trigger `make ghpages` which:
-
-- generates definitions.yaml
-- push it to gh-pages branch, under $tag/definitions.yaml
 
