@@ -114,9 +114,9 @@ def mkindex():
     p.write_bytes(
         json.dumps(
             {
-                "description": "Reusable OpenAPI definitions",
+                "description": "Reusable Volare Studio OpenAPI definitions",
                 "date": datetime.now().isoformat(),
-                "entries": ret,
+                #"entries": ret,
             },
             indent=4,
         ).encode()
@@ -125,4 +125,4 @@ def mkindex():
 
 if __name__ == "__main__":
     assemble()
-    #mkindex()
+    mkindex()

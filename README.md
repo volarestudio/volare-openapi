@@ -8,11 +8,6 @@ Latest master is available at:
 
 - https://volarestudio.github.io/volare-openapi/master/definitions.yaml
 
-Tagged specs are here:
-
-- https://volarestudio.github.io/volare-openapi/0.0.6/definitions.yaml
-
-
 Specs are assebled from the following directories:
 
 ```
@@ -28,8 +23,12 @@ docs/
 
 ## Install
 
+For installing dependencies with **virtualenv**:
+
 `sh install.sh`
 
 ## Run
+
+For generating **docs/definitions.yaml**:
 
 `python build.py`
