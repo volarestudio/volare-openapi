@@ -26,4 +26,10 @@ docs/
     └── problem.yaml
 ```
 
+## Install
 
+`sh install.sh`
+
+## Run
+
+`python build.py`
